@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表单标签</title>
+  </head>
+  <body>
+    <h3>表单的组成</h3>
+    <p>表单：表单域、表单控件、提示信息</p>
+    <!-- action URL地址  method 提交方式 name 表单域名称 -->
+    <form action="***.php" method="POST" name="name1">
+      用户名： <input type="text" name="username" value="请输入用户名" /> <br />
+      密码：<input type="password" name="password" /><br />
+      <!-- name 是表单元素名字，单选按钮必须有相同的name才能实现单选一 -->
+      性别：<input type="radio" name="sex" value="男" /> 男
+      <input type="radio" name="sex" value="女" />女<br />
+      爱好：<input type="checkbox" name="hoby" value="吃饭" /> 吃饭
+      <input type="checkbox" name="hoby" value="睡觉" /> 睡觉
+      <input type="checkbox" name="hoby" value="睡觉" checked="checked" />
+      打瞌睡<br />
+      <input type="tel" value="请输入手机号码" name="mobile" /><br /><br />
+      <input
+        type="button"
+        value="免费获取短信验证码"
+        name="getcode"
+      /><br /><br />
+      <input type="file" value="上传头像" name="file" /><br />
+      <input type="submit" value="免费注册" />
+      <input type="reset" value="重新填写" />
+    </form>
+
+    <div>
+      <h3>label标签</h3>
+      <p>label标签未input元素定义标注<span color="red">（标签）</span></p>
+      <p>
+        label标签用于绑定一个表单元素，当点击label标签内的文本时，浏览器会自动将焦点转到或者选择对于的表单元素上，用来<strong
+          >增加用户体验</strong
+        ><br />关键：label标签的for属性应当与相关元素的id属性相同
+      </p>
+      <label for="username">用户名：</label
+      ><input type="text" id="username" /><br />
+      <input type="radio" name="sex" id="nan" value="男" /><label for="nan"
+        >男</label
+      >
+      <input type="radio" name="sex" id="nv" value="女" />
+      <label for="nv">女</label>
+    </div>
+  </body>
+</html>
