@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo1 {
+        text-indent: 2em;
+      }
+      ol li {
+        color: pink;
+      }
+      .nav > a {
+        color: red;
+      }
+      .nav-bing div,
+      .nav-bing p {
+        color: palevioletred;
+      }
+      /* 未访问的链接 */
+      a:link {
+        color: black;
+        text-decoration: none;
+      }
+      /* 已访问的链接 */
+      a:visited {
+        color: red;
+      }
+      /* 鼠标经过 */
+      a:hover {
+        color: blue;
+      }
+      /* 活动的链接 点击未弹起的链接 */
+      a:active {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Emmet语法
+        <ol>
+          <li>
+            快速生成HTML结构语法
+            <ol>
+              <li>生成标签 直接输入标签名按tab键即可</li>
+              <li>生成多个相同标签 加上*就可以，比如div*3</li>
+              <li>生成父子级关系的标签，如ul>li</li>
+              <li>如果兄弟关系的标签，用+ 比如 div+p</li>
+              <li>生成带类名或id名字的，直接写.demo 或 #two tab键就可以</li>
+              <li>生成的div类名有顺序，可以用自增符号$ 比如</li>
+              <!-- .demo$*5 -->
+              <div class="demo1"></div>
+              <div class="demo2"></div>
+              <div class="demo3"></div>
+              <div class="demo4"></div>
+              <div class="demo5"></div>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>
+        CSS的复合选择器
+        <ol>
+          <li>
+            后代选择器
+            <!-- 元素1 元素2 {样式} -->
+          </li>
+          <li class="nav">子元素选择器 <a href="#">子元素</a></li>
+          <li class="nav-bing">
+            并集选择器
+            <div>我是并集div</div>
+            <p>我是并集p</p>
+          </li>
+          <li>
+            伪类选择器
+            <p>用:</p>
+            <a href="#"></a>
+          </li>
+        </ol>
+      </li>
+
+      <li>CSS的元素显示模式</li>
+      <li>CSS的背景</li>
+      <li>CSS的三大特性</li>
+      <li>CSS的注释</li>
+    </ul>
+  </body>
+</html>
